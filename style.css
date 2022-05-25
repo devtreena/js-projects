@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: teal;
+}
+
+.wrapper {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+}
+
+header {
+  color: rgb(45, 45, 218);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #b8b8b8;
+  display: flex;
+  align-items: center;
+}
+
+header i {
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.wrapper.active  header .return{
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.wrapper .item {
+  margin: 20px 25px;
+}
+
+.wrapper.active .item {
+    display: none;
+}
+
+.itemText {
+  display: none;
+  padding: 12px 10px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.itemText.error {
+  display: block;
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+.itemText.pending {
+  display: block;
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border: 1px solid #bee5eb;
+}
+
+.itemInput {
+  outline: none;
+  border: none;
+  border: 1px solid #ccc;
+  height: 50px;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.itemInput::placeholder {
+  font-size: 17px;
+}
+.itemInput:focus {
+  border: 2px solid teal;
+  padding: 10px 19px;
+}
+
+.separator {
+  height: 1px;
+  width: 100%;
+  margin: 25px 0;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.separator::before {
+  content: "or";
+  color: #ccc;
+  font-size: 19px;
+  padding: 0 25px;
+  background-color: #fff;
+}
+
+.itemBtn {
+  border: none;
+  border: 1px solid teal;
+  color: white;
+  background-color: teal;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.weather {
+  margin: 30px 0 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper.active .weather{
+    display: flex;
+}
+
+.weatherImg {
+  max-width: 125px;
+}
+
+.temp {
+  display: flex;
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.numb {
+  font-weight: 600;
+}
+
+.deg {
+  font-size: 40px;
+  margin: 10px 5px 0 0;
+  display: block;
+}
+
+.weatherNow {
+  font-size: 21px;
+  text-align: center;
+  margin: -5px 20px 15px;
+}
+
+.weatherLocation {
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.weatherIcon {
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #bfbfbf;
+  padding-top: 12px;
+}
+
+.detailsItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailsIcon{
+    font-size: 40px;
+    color: #43affc;
+    margin-right: 8px;
+}
+
+.detailsHumidity{
+    border-left: 1px solid #bfbfbf;
+}
+
+.detailsInfo .temp , .detailsHumidity span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.detailsInfo .temp .deg{
+    margin: 0;font-size: 17px;
+    padding: 0 2px 0 1px;
+}
+
+.detailsText{
+    font-size: 14px;
+}

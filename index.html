@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <i class="fa-solid fa-arrow-left return"></i>
+        Weather App
+      </header>
+      <section class="item">
+        <p class="itemText"></p>
+        <input
+          type="text"
+          class="itemInput"
+          placeholder="Enter city name"
+          spellcheck="false"
+        />
+        <div class="separator"></div>
+        <button class="itemBtn">Get Device Location</button>
+      </section>
+      <section class="weather">
+        <img src="#" alt="" class="weatherImg" />
+        <div class="temp">
+          <span class="numb"></span>
+          <span class="deg">°</span>C
+        </div>
+        <div class="weatherNow"></div>
+        <div class="weatherLocation">
+          <i class="weatherIcon fa-solid fa-location-dot"></i>
+          <span></span>
+        </div>
+        <div class="details">
+          <div class="detailsFeel detailsItem">
+            <i class="detailsIcon fa-solid fa-temperature-empty"></i>
+            <div class="detailsInfo">
+              <div class="temp">
+                <span class="numb-2">17</span>
+                <span class="deg">°</span>C
+              </div>
+              <p class="detailsText">Feels Like </p>
+            </div>
+          </div>
+          <div class="detailsHumidity detailsItem">
+            <i class="detailsIcon fa-solid fa-droplet"></i>
+            <div class="detailsInfo">
+              <span ></span>
+              <p class="detailsText">Humidity</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
